@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tamid</title>
+    <link rel="stylesheet" href="cart1.css">
+    <link rel="icon" href="imageneon.png" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <img src="image.png" alt="Your image" class="image">
+        <h1>My Cart</h1>
+    </header>
+
+    <div class="shopping-cart">
+        <table>
+            <thead>
+                <tr class="special">
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="cart-details">
+                            <img class="product-image" src="jacket.webp" alt="Product Image">
+                            <div>
+                                <p>Faux Leather jacket black</p>
+                                <small>$ 789.00</small>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>$ 789.00</td>
+                    <td><button class="remove-button">Remove</button></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="cart-details">
+                            <img class="product-image" src="boots.jpg" alt="Another Product Image">
+                            <div>
+                                <p>Rubber Lace up Boots Beige Color</p>
+                                <small>$ 500.00</small>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="2"></td>
+                    <td>$ 150.00</td>
+                    <td><button class="remove-button">Remove</button></td>
+                </tr>
+
+     
+                <tr>
+                    <td>
+                        <div class="cart-details">
+                            <img class="product-image" src="belt.webp" alt="Yet Another Product Image">
+                            <div>
+                                <p>Faux Leather Belt</p>
+                                <small>$ 300.0</small>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="3"></td>
+                    <td>$ 900.00</td>
+                    <td><button class="remove-button">Remove</button></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"></td>
+                    <td>Total</td>
+                    <td id="total-amount">$ 318.0</td>
+                </tr>
+
+                <tr>
+                    <td colspan="4" class="proceed-cell">
+                        <button onclick="document.location='payment.html'" class="proceed-button">Proceed to Payment</button>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        &copy; Tamid
+    </footer>
+
+</body>
+
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)), url(Winter\ The\ New\ Black\ Hooded\ Collar\ Loose\ Side\ Slit\ Keep\ Warm\ Coat\ Fashion\ All-match.jfif);
+
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+.image {
+    max-width: 100px;
+    max-height: 100px;
+    margin-right:10px;
+}
+
+.shopping-cart {
+    width: 80%;
+    margin: 20px auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.special th {
+    color: black;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    color: #ddd;
+}
+
+small {
+    color: white;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.product-image {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.remove-button {
+    background-color:#b858e4;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.proceed-cell {
+    text-align: right;
+}
+
+.proceed-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.proceed-button:hover {
+    background-color: #45a049;
+}
+
+#total-amount {
+    font-weight: bold;
+}
+</style>
+</html>

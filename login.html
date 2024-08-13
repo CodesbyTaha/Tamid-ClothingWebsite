@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="icon" href="imageneon.png" type="image/x-icon">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Font Awesome for symbols -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="video-container">
+        <video autoplay muted loop id="background-video">
+            <source src="Free VJ Loop - Stormlight by Nocturnal.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+        <div class="banner">
+            <div class="navbar">
+                <img src="image.png" class="logo">
+                <ul>
+                    <li><a href="main.html"><i class="fas fa-home"></i>Home</a></li>
+                    <li><a href="login.html"><i class="fas fa-user"></i>Profile</a></li>
+                    <li><a href="about.html"><i class="far fa-address-card"></i>About</a></li>
+                    <li><a href="categories.html"><i class="fa-solid fa-layer-group"></i>Categories</a></li>
+                    <li><a href="#contact"><i class="far fa-envelope"></i>Contact</a></li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i>Go To Cart</a></li>
+                    
+                </ul>
+                <div class="nav-search">
+                    <select class="search-select">
+                        <option>All</option>
+                    </select>
+                    <input placeholder="Search" class="search-input">
+                    <div class="search-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper">
+                <form action="">
+                    <h1>Login</h1>
+                    <div class="input-box">
+                        <input type="text" placeholder="Username" required>
+                        <i class='bx bx-user'></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" placeholder="Password" required>
+                        <i class='bx bxs-lock'></i>
+                    </div>
+                    <div class="remember-forgot">
+                        <label>
+                            <input type="checkbox">Remember me
+                        </label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button onclick="document.location='main.html'" type="submit" class="button">Login</button>
+                    <div class="sign-up">
+                        <p>Dont have an account? <a href="signup.html">Sign up</a></p>
+                    </div>
+            </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+
+    }
+
+    .banner {
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)), url(MEN\ FASHION.jpg);
+        background-size: cover;
+        background-position: center;
+    } 
+
+    .navbar {
+        width: 97%;
+        top: 0;
+
+        height: 80px;
+        background-color: rgba(0, 0, 0, 0.15);
+        /* Add backdrop-filter for blur effect */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        position: fixed;
+        z-index: 2;
+    }
+
+    .logo {
+        width: 100px;
+        cursor: pointer;
+    }
+
+    .navbar ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        position: relative;
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+    }
+
+    .navbar ul li::after {
+        content: '';
+        height: 3px;
+        width: 0;
+        background: #b858e4;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: 0.4s;
+    }
+
+    .navbar ul li:hover::after {
+        width: 100%;
+    }
+
+    .nav-search {
+        display: flex;
+        align-items: center;
+        height: 20px;
+        margin-right: 50px;
+    }
+
+    .search-select {
+        background-color: #d1cece;
+        width: 40px;
+        text-align: center;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        border: none;
+        height: 30px;
+        font-size: 0.7rem;
+    }
+
+    .search-input {
+        width: 150px;
+        font-size: 0.7rem;
+        border: none;
+        height: 30px;
+    }
+
+    .search-icon {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        color: #000000;
+        background-color: #b858e4;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        height: 30px;
+
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+
+    }
+
+    .wrapper {
+        margin: 150px auto 0 auto;
+
+        width: 420px;
+        background: transparent;
+        color: #fff;
+        border-radius: 12px;
+        padding: 30px 40px;
+        border: 2px solid rgba(255, 255, 255, 255);
+        backdrop-filter: blur(10px);
+    }
+
+    .wrapper h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .wrapper .input-box {
+        position: relative;
+        height: 50px;
+        width: 100%;
+        margin: 30px 0;
+    }
+
+    .input-box input {
+        border: 2px solid rgba(255, 255, 255, .2);
+        width: 100%;
+        height: 100%;
+        border-radius: 40px;
+        font-size: 16px;
+        color: #fff;
+        padding: 20px 45px 20px 20px;
+        background: transparent;
+    }
+
+    .input-box input::placeholder {
+        color: #fff;
+    }
+
+    .input-box i {
+        position: absolute;
+        right: 20px;
+        transform: translate(-50%);
+        font-size: 20px;
+        top: 30%;
+    }
+
+    .wrapper .remember-forgot {
+        justify-content: space-between;
+        margin: -15px 0 15px;
+        font-size: 14.5px;
+        display: flex;
+    }
+
+    .remember-forgot label input {
+        accent-color: #fff;
+        margin-right: 3px;
+    }
+
+    .remember-forgot a {
+        color: #fff;
+    }
+
+    .remember- forgot a:hover {
+        text-decoration: underline;
+    }
+
+    .wrapper .button {
+        width: 100%;
+        height: 45px;
+        background: #fff;
+        border-radius: 40px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+        cursor: pointer;
+        font-size: 16px;
+        color: #333;
+        font-weight: 600;
+        border: none;
+        outline: none;
+    }
+
+    .wrapper .sign-up {
+        font-size: 14.5px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .sign-up p a {
+        color: #fff;
+        font-weight: 600;
+    }
+
+    .sign-up p a:hover {
+        text-decoration: underline;
+    }
+
+
+    .video-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    #background-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+</style>
+
+</html>

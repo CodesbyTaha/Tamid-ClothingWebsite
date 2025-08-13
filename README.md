@@ -3,7 +3,7 @@
 ![Bootstrap Logo](https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png)
 
 ## 📖 Overview
-**FashionHub** is a stylish and responsive clothing e-commerce website built using **HTML**, **CSS**, and **Bootstrap**.  
+**Tamid** is a stylish and responsive clothing e-commerce website built using **HTML**, **CSS**, and **Bootstrap**.  
 It showcases my skills in **web design**, **UI/UX aesthetics**, and **smooth navigation**.
 
 The website covers the complete online shopping experience:
@@ -50,4 +50,5 @@ cd Tamid-ClothingWebsite
 
 ### 2️⃣ Open in Browser
 Simply open login.html in your preferred web browser.
+
 

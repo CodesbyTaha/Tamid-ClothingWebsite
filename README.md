@@ -44,9 +44,10 @@ The website covers the complete online shopping experience:
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/your-username/fashionhub.git
-cd fashionhub
+https://github.com/TahaGPT/Tamid-ClothingWebsite.git
+cd Tamid-ClothingWebsite
 ```
 
 ### 2️⃣ Open in Browser
-Simply open index.html in your preferred web browser.
+Simply open login.html in your preferred web browser.
+
